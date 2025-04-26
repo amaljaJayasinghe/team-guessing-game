@@ -6,3 +6,7 @@ if guess == number:
 print("You win!") 
 else: 
 print(f"Wrong! The number was {number}") 
+if guess < number: 
+    print("Too low!") 
+elif guess > number: 
+    print("Too high!")
