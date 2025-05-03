@@ -1,4 +1,7 @@
 import random
+import time
+start_time = time.time()
+
 
 while True:
     number = random.randint(1, 75)
@@ -20,3 +23,6 @@ while True:
     print("Play again? (y/n)")
     if input().lower() != 'y':
         break
+    
+    print(f"Time taken: {time.time() - start_time:.2f}s")
+
